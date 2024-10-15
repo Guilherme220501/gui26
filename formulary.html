@@ -18,13 +18,13 @@ summary{width: 150px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;padd
 .summary:hover{transform: scale(1.05);transition: transform(0.9s);}
 form{align-items: center;justify-content: center;text-align: center;margin: auto;display: flex;flex-direction: column;}
 fieldset{width: 300px;padding: 20px;margin: auto;border-radius: 10px 10px;background-color: beige;border: 6px solid white;box-shadow: 8px 8px 8px black;display: flex;flex-direction: column;align-items: center;justify-content: center;}
-label{padding: 10px;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 6px;color: black;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: left;}
+label{padding: 10px;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: oblique;text-shadow: 6px;color: black;display: flex;flex-direction: column;align-items: center;justify-content: center;text-align: center;}
 input{padding: 10px;text-align: left;font-size: 15px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: inherit;color: black;text-shadow: 6px;background-color: beige;border-radius: 10px 10px;border: 5px solid blue;width: 300px;margin: auto;}
-.color1{display: flex;flex-direction: row;align-items: center;justify-content: center;padding: 5px;gap: 5px;background-color: black;border: 5px solid white;box-shadow: 8px 8px 8px yellow;width:600px;margin:auto;border-radius: 10px 10px;}
-.color2{display: flex;flex-direction: row;align-items: center;justify-content: center;padding: 5px;gap: 5px;background-color: blue;border: 5px solid white;box-shadow: 8px 8px 8px yellow;width:600px;margin:auto;border-radius: 10px 10px;}
-.color3{display: flex;flex-direction: row;align-items: center;justify-content: center;padding: 5px;gap: 5px;background-color: white;border: 5px solid black;box-shadow: 8px 8px 8px blue;width:600px;margin:auto;border-radius: 10px 10px;}
-.color4{display: flex;flex-direction: row;align-items: center;justify-content: center;padding: 5px;gap: 5px;background-color: blanchedalmond;border: 5px solid white;box-shadow: 8px 8px 8px blue;width:600px;margin:auto;border-radius: 10px 10px;}
-select{width: 200px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;padding: 10px;background-color: black;color: yellow;border: 4px solid white;box-shadow: 3px 3px 3px yellow;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: inherit;text-shadow: 6px;}
+.color1{display: flex;flex-direction: row;padding: 5px;gap: 5px;background-color: black;border: 5px solid white;box-shadow: 8px 8px 8px yellow;width:700px;margin:auto;border-radius: 10px 10px;overflow-x:auto;gap:10px;}
+.color2{display: flex;flex-direction:row;padding: 5px;gap: 5px;background-color: blue;border: 5px solid white;box-shadow: 8px 8px 8px yellow;width:700px;margin:auto;border-radius: 10px 10px;overflow-x:auto;gap:10px;}
+.color3{display: flex;flex-direction: row;padding: 5px;gap: 5px;background-color: white;border: 5px solid black;box-shadow: 8px 8px 8px blue;width:800px;margin:auto;border-radius: 10px 10px;overflow-x:auto;gap:10px;}
+.color4{display: flex;flex-direction: row;padding: 5px;gap: 5px;background-color: blanchedalmond;border: 5px solid white;box-shadow: 8px 8px 8px blue;width:800px;margin:auto;border-radius: 10px 10px;overflow-x:auto;gap:10px;}
+select{width: 150px;margin: auto;border-radius: 10px 10px;text-shadow: 6px;padding: 10px;background-color: black;color: yellow;border: 4px solid white;box-shadow: 3px 3px 3px yellow;font-size: 20px;font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;font-style: inherit;text-shadow: 6px;}
 textarea{width: 300px;height: 200px;margin: auto;border-radius: 10px 10px;background-color: rgb(255, 255, 255);color: black;font-size: 20px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;font-style: inherit;text-shadow: 6px;padding: 10px;border: 5px solid red;}
 button{width: 250px;margin: auto;border-radius: 10px 10px;background-color: blue;color: white;border: 4px solid white;padding: 10px;font-size: 20px;font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;font-style: inherit;text-shadow: 6px;}
 footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;justify-content: baseline;align-items: center;text-shadow: 6px;}
@@ -35,7 +35,9 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <form>
     <header><h1><big>Cadastro de Brs</big></h1>
     <br>
+    <div class="relogio">
     <div id="relogio"></div>
+</div>
     </header>
     <br>
     <main>
@@ -79,7 +81,7 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <input type="checkbox" name="civil?" value="Casado">
     <label for="Solteiro" style="font-size: 8px;color: white;">Solteiro</label>
     <input type="checkbox" name="civil?" value="Solteiro">
-    <label for="Divorciado" style="color: white;" style="font-size: 8px;color: white;">Divorciado</label>
+    <label for="Divorciado" style="color: white;font-size: 8px;">Divorciado</label>
     <input type="checkbox" name="civil?" value="Divorciado">
     <label for="Separado" style="font-size: 8px;color: white;">Separado</label>
     <input type="checkbox" name="civil?" value="Separado">
@@ -105,7 +107,7 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <label for="Mistico" style="font-size: 8px;color: white;">Mistico</label>
     <input type="checkbox" name="Experiência" value="Mistico">
     </div>
-    </details></div></div>
+    </details></div>
     <br>
     <br>
     <h2><big>Qual o seu nível de Conhecimento?</big></h2>
@@ -115,7 +117,7 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <div class="color3">
     <label style="font-size: 8px;">  Iniciante</label>
     <input type="radio" value="Iniciante" name="Conhecimento?" required>
-    <label>Intermediário</label>
+    <label style="font-size: 8px;">Intermediário</label>
     <input type="radio" value="Intermediário" name="Conhecimento?" required>
     <label style="font-size: 8px;"> Mediano</label>
     <input type="radio" value="Mediano" name="Conhecimento?" required>
@@ -124,7 +126,7 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <label style="font-size: 8px;"> Master</label>
     <input type="radio" value="Master" name="Conhecimento?" required>
     </div>
-    </details></div></div>
+    </details></div>
     <br>
     <br>
     <h2><big>Qual o sua classe social?</big></h2>
@@ -143,12 +145,16 @@ footer{width: 300px;margin: auto;border-radius: 10px 10px;text-align: center;jus
     <label style="font-size: 8px;"> Classe E</label>
     <input type="radio" name="social?"required value="Classe E">
     </div>
-    </details></div></div>
+    </details></div>
     <br>
     <br>
     <h2><big>Qual o seu signo?</big></h2>
     <br>
+<<<<<<< HEAD
     <div id="text"><details><summary style="background-color: black;color: yellow;border: 5px solid white;box-shadow: 6px 6px 6px yellow;">QUAL?</summary>
+=======
+    <div class="summary"><div id="text"><details><summary style="background-color: black;color: yellow;border: 5px solid white;box-shadow: 6px 6px 6px yellow;width:230px;">QUAL?</summary>
+>>>>>>> f087e8c206c0b43758edfcd11d25ec9cc54a8361
     <br>
     <select name="signo?" id="signo?" required>
     <option value="" selected disabled>Selecione</option>
